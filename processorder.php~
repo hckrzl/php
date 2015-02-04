@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<title>
+Bob's Auto Parts - Order Results
+</title>
+</head>
+
+<body>
+<h1>Bob's Auto Parts</h1>
+<h2>Order Results</h2>
+<?php
+echo "order processed!";
+echo "<p>".date('H:i, jS F Y')."</p>";
+
+$tireqty=$_REQUEST['tires'];
+$oilqty=$_REQUEST['oil'];
+$sparkqty=$_REQUEST['sparks'];
+
+echo "<p>the quantity of tires is $tireqty"."</p>";
+echo "<p>the quantiry of oil is $oilqty"."</p>";
+echo "<p>the quantity of sparks is $sparkqty"."</p>";
+
+#echo var_dump($_POST)
+
+
+?>
+
+
+
+</body>
+</html>
